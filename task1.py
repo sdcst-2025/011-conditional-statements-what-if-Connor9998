@@ -19,3 +19,9 @@ The number is 100
 Enter a number: 102
 The number is larger than 100
 """
+
+a=input("n")
+#convert to a number
+a= float(a)     # for decimal values
+if a > 100:
+    print(a)

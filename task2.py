@@ -20,3 +20,14 @@ positive
 Enter a number: -1.2
 negative
 """
+c=input("number")
+#convet to a number
+c= float(c)
+if c > 0:
+    print("positive")
+elif c < 0:
+    print("negative")
+elif c == 0:
+    print("zero")
+
+

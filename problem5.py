@@ -29,3 +29,23 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+
+
+def is_perfect_square(n):
+    if n < 0:
+        return False
+    root = int(math.sqrt(n))
+    return root * root == n
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+
+discriminant = b**2 - 4 * a * c
+
+if is_perfect_square(discriminant):
+    print("the equation can be factored")
+else:
+    print("the equation can not be factored")

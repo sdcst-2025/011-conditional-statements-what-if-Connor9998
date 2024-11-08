@@ -31,3 +31,13 @@ Enter a number: 10000
 
 
 """
+
+c=input("number:")
+#conver to a number
+c=float(c)
+if c >= 1000:
+    print(3)
+elif c> 100<=1000:
+    print(2)
+elif c > 10<=100:
+    print(0)
