@@ -22,6 +22,6 @@ The number is larger than 100
 
 a=input("n")
 #convert to a number
-a= float(a)     # for decimal values
+a= float(a)  
 if a > 100:
     print(a)
