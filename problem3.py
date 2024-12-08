@@ -25,18 +25,17 @@
 """
 
 
-username = input("Enter username: ")
-password = input("Enter password: ")
+username = input("Enter username:")
 
+thename = "admin"
+pass22 = "12345password"
 
-valid_username = "admin"
-valid_password = "12345password"
-
-    
-if username == valid_username and password == valid_password:
-    print("Access granted")
+if username != thename:
+    print("Invalid username")
 else:
-    print("Access denied")  
-
-
+    password = input("Enter password: ")
+    if password == pass22:
+        print("Access granted")
+    else:
+        print("Access denied")
 
