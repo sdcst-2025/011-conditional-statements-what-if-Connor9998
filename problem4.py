@@ -40,17 +40,15 @@ input("number:")
 """
 
 def is_right_triangle(a, b, c):
-    # Sort the sides to identify the potential hypotenuse
+    
     sides = sorted([a, b, c])
     
-    # Pythagorean theorem check with a 2% margin of error
-    hypothesized_hypotenuse = sides[2]  # Largest side
+
+    hypothesized_hypotenuse = sides[2]  
     side1, side2 = sides[0], sides[1]
     
-    # Calculate the expected hypotenuse from side1 and side2
     expected_hypotenuse = (side1**2 + side2**2) ** 0.5
     
-    # Calculate the percent difference between expected and actual hypotenuse
     percent_diff = abs(expected_hypotenuse - hypothesized_hypotenuse) / hypothesized_hypotenuse * 100
     
     if percent_diff < 2:
@@ -60,11 +58,11 @@ def is_right_triangle(a, b, c):
     else:
         return "that is an obtuse triangle"
 
-# Get user input
+
 a = float(input("Enter side 1: "))
 b = float(input("Enter side 2: "))
 c = float(input("Enter side 3: "))
 
-# Output the result
+
 result = is_right_triangle(a, b, c)
 print(result)
