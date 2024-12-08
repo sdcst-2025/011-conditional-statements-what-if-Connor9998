@@ -24,32 +24,19 @@
  Access denied
 """
 
-def login():  
-    username = input("Enter username: ")  
-    password = input("Enter password: ")  
-  
-    valid_users = ["admin"]  
-    valid_passwords = ["12345password"]  
-  
-    if username in valid_users and password == valid_passwords[valid_users.index(username)]:  
-        print("Access granted")  
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+
+valid_username = "admin"
+valid_password = "12345password"
+
     
-    if valid_users !=["admin"] :  
-        print("Invalid username")  
-        
-    elif valid_passwords !=("12345password"):
-        print("Access Deneid")
-
-login()  
+if username == valid_username and password == valid_password:
+    print("Access granted")
+else:
+    print("Access denied")  
 
 
 
-"""
-b=("12345password")
-a=input("enter username")
-if (a)==("admin"):
-   b= input("password:")
-elif b ==("12345password"):
-    print("access granted")
-
-"""
